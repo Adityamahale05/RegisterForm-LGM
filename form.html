@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale=1.0">
+        <title>Students  Registration Form</title>
+        <link rel="stylesheet" href="reg.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Enrollment Form</h1>
+            <div class="container left">
+                <div id="details">
+                    <label for="inp_name" class="head">Name</label>
+                    <input type="text" name="name" id="inp_name" class="width clr_inp" placeholder="Frist-Name Middle-Name Last-Name">
+                    <br>
+                    <label for="inp_email" class="head">Email</label>
+                    <input type="email" name="email" id="inp_email" class="width clr_inp" placeholder="Enter Email">
+                    <br>
+                    <label for="inp_img" class="head">Image</label>
+                    <input type="file" name="name" id="inp_img" accept="image/*" class="width clr_inp" >
+                    <br>
+                    <lable for="gender" class="head">Gender</lable>
+                    <div class="radios">
+                        <input type="radio" name="gender" id="inp_male" value="Male" class="gender">
+                        <label for="inp_male">Male</label><br>
+                        <input type="radio" name="gender" id="inp_female" value="Female" class="gender">
+                        <label for="inp_female">Female</label>
+                    </div>
+                    <br>
+                    <label for="Tech-skill" class="head">Tech-Skill</label>
+                    <div class="boxes">
+                        <input type="checkbox" name="web-Development" id="inp_web" class="checkbox" value="web-Development">
+                        <label for="imp_web">Web-Development</label>
+                        <input type="checkbox" name="Blockchain" id="inp_Block" class="checkbox" value="Blockchain">
+                        <label for="imp_Block">Blockchain</label>
+                        <input type="checkbox" name="Cybersecurity" id="inp_cyber" class="checkbox" value="Cybersecurity">
+                        <label for="imp_cyber">Cybersecurity</label>
+                    </div>
+                    <br>
+                    <div class="buttons">
+                        <button type="submit" id="submit">Enroll</button>
+                        <button id="clear">clear</button>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div id="output"></div>
+                </div>
+            </div>
+        </div>
+        <script  type="text/javascript" src="regi.js"></script>
+    </body>
+</html>
